@@ -34,6 +34,60 @@ const activities = [
         type: "indoor",
         description: "Great children's section with story times and interactive play areas.",
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Koret Children's Quarter",
+        type: "outdoor",
+        description: "Historic carousel and a massive playground in Golden Gate Park.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Exploratorium",
+        type: "indoor",
+        description: "Hands-on museum of science, art and human perception. Mind-blowing for kids.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "San Francisco Zoo",
+        type: "outdoor",
+        description: "Animals, steam train, and a great playground. Classic family day out.",
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Conservatory of Flowers",
+        type: "indoor",
+        description: "Beautiful greenhouse with exotic plants. Warm and humid on cold days.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Salesforce Park",
+        type: "outdoor",
+        description: "Rooftop park with a gondola, water feature, and children's play area.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Mission Dolores Park",
+        type: "outdoor",
+        description: "Great playground with a view. Very popular, good for people watching.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Julius Kahn Playground",
+        type: "outdoor",
+        description: "Parisian style playground in the Presidio. Great sandbox and structures.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Mountain Lake Park",
+        type: "outdoor",
+        description: "Recently renovated playground next to a lake. Ducks and turtles!",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+    },
+    {
+        name: "Ferry Building",
+        type: "indoor",
+        description: "Great food stalls and farmer's market on weekends. Good for walking.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
     }
 ];
 
