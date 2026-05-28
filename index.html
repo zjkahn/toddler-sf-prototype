@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Toddler Weekends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>SF Toddler Weekends</h1>
+            <p class="subtitle">Beat decision fatigue. Let's plan your weekend.</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <button id="generate-btn" class="btn-primary">✨ Generate My Weekend</button>
+                <div class="filters">
+                    <label class="switch">
+                        <input type="checkbox" id="outdoor-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Outdoor Only</span>
+                </div>
+            </div>
+
+            <div id="itinerary-container" class="itinerary-grid">
+                <!-- Activity cards will be inserted here by JS -->
+                <div class="empty-state">
+                    <p>Click the button above to generate a plan!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for tired parents.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
