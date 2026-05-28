@@ -3,91 +3,136 @@ const activities = [
         name: "Presidio Tunnel Tops",
         type: "outdoor",
         description: "Amazing views, huge playground, and plenty of space to run around.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly", "🚧 Fenced Area"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly", "🚧 Fenced Area"],
+        lat: 37.804,
+        lng: -122.459,
+        image: "playground.png"
     },
     {
         name: "California Academy of Sciences",
         type: "indoor",
         description: "Aquarium, planetarium, and natural history museum. Great for rainy days.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.769,
+        lng: -122.466,
+        image: "playground.png"
     },
     {
         name: "Glen Canyon Park",
         type: "outdoor",
         description: "Nice trails and a great playground. Feels like nature in the city.",
-        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Partial Stroller"]
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Partial Stroller"],
+        lat: 37.738,
+        lng: -122.443,
+        image: "playground.png"
     },
     {
         name: "Randall Museum",
         type: "indoor",
         description: "Live animals, science exhibits, and train models. Very toddler friendly.",
-        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.764,
+        lng: -122.437,
+        image: "playground.png"
     },
     {
         name: "Yerba Buena Gardens",
         type: "outdoor",
         description: "Carousel, play area, and bowling nearby. Lots of grass to roll on.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.785,
+        lng: -122.403,
+        image: "playground.png"
     },
     {
         name: "SF Public Library - Main",
         type: "indoor",
         description: "Great children's section with story times and interactive play areas.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.779,
+        lng: -122.416,
+        image: "playground.png"
     },
     {
         name: "Koret Children's Quarter",
         type: "outdoor",
         description: "Historic carousel and a massive playground in Golden Gate Park.",
-        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.767,
+        lng: -122.456,
+        image: "playground.png"
     },
     {
         name: "Exploratorium",
         type: "indoor",
         description: "Hands-on museum of science, art and human perception. Mind-blowing for kids.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.801,
+        lng: -122.397,
+        image: "playground.png"
     },
     {
         name: "San Francisco Zoo",
         type: "outdoor",
         description: "Animals, steam train, and a great playground. Classic family day out.",
-        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.732,
+        lng: -122.503,
+        image: "playground.png"
     },
     {
         name: "Conservatory of Flowers",
         type: "indoor",
         description: "Beautiful greenhouse with exotic plants. Warm and humid on cold days.",
-        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.772,
+        lng: -122.460,
+        image: "playground.png"
     },
     {
         name: "Salesforce Park",
         type: "outdoor",
         description: "Rooftop park with a gondola, water feature, and children's play area.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.789,
+        lng: -122.396,
+        image: "playground.png"
     },
     {
         name: "Mission Dolores Park",
         type: "outdoor",
         description: "Great playground with a view. Very popular, good for people watching.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.759,
+        lng: -122.426,
+        image: "playground.png"
     },
     {
         name: "Julius Kahn Playground",
         type: "outdoor",
         description: "Parisian style playground in the Presidio. Great sandbox and structures.",
-        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.792,
+        lng: -122.453,
+        image: "playground.png"
     },
     {
         name: "Mountain Lake Park",
         type: "outdoor",
         description: "Recently renovated playground next to a lake. Ducks and turtles!",
-        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.787,
+        lng: -122.470,
+        image: "playground.png"
     },
     {
         name: "Ferry Building",
         type: "indoor",
         description: "Great food stalls and farmer's market on weekends. Good for walking.",
-        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"]
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.795,
+        lng: -122.393,
+        image: "playground.png"
     }
 ];
 
@@ -99,6 +144,12 @@ const outdoorToggle = document.getElementById('outdoor-toggle');
 const itineraryContainer = document.getElementById('itinerary-container');
 const satTab = document.getElementById('sat-tab');
 const sunTab = document.getElementById('sun-tab');
+const shareBtn = document.getElementById('share-btn');
+const mapToggleBtn = document.getElementById('map-toggle-btn');
+const mapContainer = document.getElementById('map-container');
+
+let map = null;
+let markers = [];
 
 generateBtn.addEventListener('click', () => {
     generateWeekend();
@@ -116,6 +167,14 @@ sunTab.addEventListener('click', () => {
     sunTab.classList.add('active');
     satTab.classList.remove('active');
     renderItinerary();
+});
+
+shareBtn.addEventListener('click', () => {
+    shareItinerary();
+});
+
+mapToggleBtn.addEventListener('click', () => {
+    toggleMap();
 });
 
 function generateWeekend() {
@@ -137,6 +196,7 @@ function generateWeekend() {
 
     currentWeekend = selected;
     renderItinerary();
+    updateMap();
 }
 
 function renderItinerary() {
@@ -172,6 +232,14 @@ function renderItinerary() {
     activitiesToShow.forEach((activity, index) => {
         const card = document.createElement('div');
         card.className = 'card';
+
+        if (activity.image) {
+            const img = document.createElement('img');
+            img.src = activity.image;
+            img.alt = activity.name;
+            img.className = 'card-image';
+            card.appendChild(img);
+        }
 
         const cardHeader = document.createElement('div');
         cardHeader.className = 'card-header';
@@ -211,4 +279,90 @@ function renderItinerary() {
 
         itineraryContainer.appendChild(card);
     });
+}
+
+function shareItinerary() {
+    if (currentWeekend.length === 0) return;
+
+    const text = `Here is our SF Toddler Weekend plan!
+    
+Saturday:
+- Morning: ${currentWeekend[0].name}
+- Afternoon: ${currentWeekend[1].name}
+
+Sunday:
+- Morning: ${currentWeekend[2].name}
+- Afternoon: ${currentWeekend[3].name}`;
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'SF Toddler Weekend Plan',
+            text: text,
+        })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    } else {
+        // Fallback: Copy to clipboard
+        navigator.clipboard.writeText(text).then(() => {
+            const originalText = shareBtn.textContent;
+            shareBtn.textContent = "📋 Copied!";
+            setTimeout(() => {
+                shareBtn.textContent = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+    }
+}
+
+function toggleMap() {
+    mapContainer.classList.toggle('hidden');
+    if (!mapContainer.classList.contains('hidden')) {
+        initMap();
+        // Trigger relayout if map already exists
+        if (map) {
+            setTimeout(() => map.invalidateSize(), 100);
+        }
+    }
+}
+
+function initMap() {
+    if (map !== null) return; // Already initialized
+
+    // SF coordinates
+    map = L.map('map').setView([37.7749, -122.4194], 12);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    updateMap();
+}
+
+function updateMap() {
+    if (map === null || currentWeekend.length === 0) return;
+
+    // Clear old markers
+    markers.forEach(marker => map.removeLayer(marker));
+    markers = [];
+
+    // Add new markers
+    currentWeekend.forEach((activity, index) => {
+        if (activity.lat && activity.lng) {
+            const day = index < 2 ? 'Sat' : 'Sun';
+            const time = index % 2 === 0 ? 'AM' : 'PM';
+            
+            const marker = L.marker([activity.lat, activity.lng])
+                .addTo(map)
+                .bindPopup(`<b>${day} ${time}</b>: ${activity.name}`);
+            
+            markers.push(marker);
+        }
+    });
+
+    // Fit bounds to markers if we have any
+    if (markers.length > 0) {
+        const group = new L.featureGroup(markers);
+        map.fitBounds(group.getBounds().pad(0.1));
+    }
 }
