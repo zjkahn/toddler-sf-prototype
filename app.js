@@ -6,7 +6,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly", "🚧 Fenced Area"],
         lat: 37.804,
         lng: -122.459,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "California Academy of Sciences",
@@ -15,7 +15,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.769,
         lng: -122.466,
-        image: "playground.png"
+        category: "museum"
     },
     {
         name: "Glen Canyon Park",
@@ -24,7 +24,7 @@ const activities = [
         tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Partial Stroller"],
         lat: 37.738,
         lng: -122.443,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Randall Museum",
@@ -33,7 +33,7 @@ const activities = [
         tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.764,
         lng: -122.437,
-        image: "playground.png"
+        category: "museum"
     },
     {
         name: "Yerba Buena Gardens",
@@ -42,7 +42,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.785,
         lng: -122.403,
-        image: "playground.png"
+        category: "garden"
     },
     {
         name: "SF Public Library - Main",
@@ -51,7 +51,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.779,
         lng: -122.416,
-        image: "playground.png"
+        category: "library"
     },
     {
         name: "Koret Children's Quarter",
@@ -60,7 +60,7 @@ const activities = [
         tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.767,
         lng: -122.456,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Exploratorium",
@@ -69,7 +69,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.801,
         lng: -122.397,
-        image: "playground.png"
+        category: "museum"
     },
     {
         name: "San Francisco Zoo",
@@ -78,7 +78,7 @@ const activities = [
         tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.732,
         lng: -122.503,
-        image: "playground.png"
+        category: "zoo"
     },
     {
         name: "Conservatory of Flowers",
@@ -87,7 +87,7 @@ const activities = [
         tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.772,
         lng: -122.460,
-        image: "playground.png"
+        category: "garden"
     },
     {
         name: "Salesforce Park",
@@ -96,7 +96,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.789,
         lng: -122.396,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Mission Dolores Park",
@@ -105,7 +105,7 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.759,
         lng: -122.426,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Julius Kahn Playground",
@@ -114,7 +114,7 @@ const activities = [
         tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.792,
         lng: -122.453,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Mountain Lake Park",
@@ -123,7 +123,7 @@ const activities = [
         tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.787,
         lng: -122.470,
-        image: "playground.png"
+        category: "park"
     },
     {
         name: "Ferry Building",
@@ -132,9 +132,117 @@ const activities = [
         tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
         lat: 37.795,
         lng: -122.393,
-        image: "playground.png"
+        category: "market"
+    },
+    {
+        name: "Walt Disney Family Museum",
+        type: "indoor",
+        description: "Animation history and interactive exhibits. Good for older toddlers.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.801,
+        lng: -122.458,
+        category: "museum"
+    },
+    {
+        name: "SF Botanical Garden",
+        type: "outdoor",
+        description: "Huge garden with plants from around the world. Great for walking.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.767,
+        lng: -122.469,
+        category: "garden"
+    },
+    {
+        name: "Japanese Tea Garden",
+        type: "outdoor",
+        description: "Peaceful garden with pagodas and koi ponds. Watch the high steps.",
+        tags: ["🅿️ Medium Parking", "🚻 Bathrooms", "🛒 Partial Stroller"],
+        lat: 37.770,
+        lng: -122.467,
+        category: "garden"
+    },
+    {
+        name: "Sutro Heights Park",
+        type: "outdoor",
+        description: "Ruins of an old estate with ocean views. Great for exploring.",
+        tags: ["🅿️ Easy Parking", "🚻 No Bathrooms", "🛒 Partial Stroller"],
+        lat: 37.777,
+        lng: -122.512,
+        category: "park"
+    },
+    {
+        name: "Ocean Beach",
+        type: "outdoor",
+        description: "Play in the sand and watch the waves. Bring warm layers!",
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.769,
+        lng: -122.511,
+        category: "park"
+    },
+    {
+        name: "Baker Beach",
+        type: "outdoor",
+        description: "Iconic views of the Golden Gate Bridge. Good for sand play.",
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.793,
+        lng: -122.483,
+        category: "park"
+    },
+    {
+        name: "Crissy Field",
+        type: "outdoor",
+        description: "Flat, wide trails along the bay. Great for strollers and bikes.",
+        tags: ["🅿️ Easy Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.803,
+        lng: -122.466,
+        category: "park"
+    },
+    {
+        name: "Palace of Fine Arts",
+        type: "outdoor",
+        description: "Walk around the lagoon and see the swans. Very scenic.",
+        tags: ["🅿️ Medium Parking", "🚻 No Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.802,
+        lng: -122.448,
+        category: "park"
+    },
+    {
+        name: "Children's Creativity Museum",
+        type: "indoor",
+        description: "Hands-on art and technology museum for kids. Very interactive.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.784,
+        lng: -122.402,
+        category: "museum"
+    },
+    {
+        name: "Lafayette Park",
+        type: "outdoor",
+        description: "Great playground at the top of the hill. Nice views.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.791,
+        lng: -122.429,
+        category: "park"
+    },
+    {
+        name: "Alta Plaza Park",
+        type: "outdoor",
+        description: "Playground with multi-tiered levels and great city views.",
+        tags: ["🅿️ Hard Parking", "🚻 Bathrooms", "🛒 Stroller Friendly"],
+        lat: 37.791,
+        lng: -122.437,
+        category: "park"
     }
 ];
+
+const categoryEmojis = {
+    park: "🌳",
+    museum: "🏛️",
+    library: "📚",
+    zoo: "🦁",
+    garden: "🌸",
+    market: "🛒"
+};
 
 let currentWeekend = [];
 let activeDay = 'saturday';
@@ -233,13 +341,7 @@ function renderItinerary() {
         const card = document.createElement('div');
         card.className = 'card';
 
-        if (activity.image) {
-            const img = document.createElement('img');
-            img.src = activity.image;
-            img.alt = activity.name;
-            img.className = 'card-image';
-            card.appendChild(img);
-        }
+
 
         const cardHeader = document.createElement('div');
         cardHeader.className = 'card-header';
@@ -256,7 +358,8 @@ function renderItinerary() {
         cardHeader.appendChild(timeTag);
 
         const h3 = document.createElement('h3');
-        h3.textContent = activity.name;
+        const emoji = categoryEmojis[activity.category] || "📍";
+        h3.textContent = `${emoji} ${activity.name}`;
 
         const desc = document.createElement('p');
         desc.className = 'description';
