@@ -91,12 +91,31 @@ const activities = [
     }
 ];
 
+let currentWeekend = [];
+let activeDay = 'saturday';
+
 const generateBtn = document.getElementById('generate-btn');
 const outdoorToggle = document.getElementById('outdoor-toggle');
 const itineraryContainer = document.getElementById('itinerary-container');
+const satTab = document.getElementById('sat-tab');
+const sunTab = document.getElementById('sun-tab');
 
 generateBtn.addEventListener('click', () => {
     generateWeekend();
+});
+
+satTab.addEventListener('click', () => {
+    activeDay = 'saturday';
+    satTab.classList.add('active');
+    sunTab.classList.remove('active');
+    renderItinerary();
+});
+
+sunTab.addEventListener('click', () => {
+    activeDay = 'sunday';
+    sunTab.classList.add('active');
+    satTab.classList.remove('active');
+    renderItinerary();
 });
 
 function generateWeekend() {
@@ -108,9 +127,6 @@ function generateWeekend() {
     }
 
     // Simple random selection for prototype
-    // We need 4 activities (Sat AM, Sat PM, Sun AM, Sun PM)
-    // If not enough, we just repeat or show what we have.
-    
     const selected = [];
     const available = [...filteredActivities];
     
@@ -119,25 +135,41 @@ function generateWeekend() {
         selected.push(available.splice(randomIndex, 1)[0]);
     }
 
-    renderItinerary(selected);
+    currentWeekend = selected;
+    renderItinerary();
 }
 
-function renderItinerary(selectedActivities) {
+function renderItinerary() {
     itineraryContainer.replaceChildren(); // Clear previous content securely
 
-    if (selectedActivities.length === 0) {
+    if (currentWeekend.length === 0) {
         const emptyMsg = document.createElement('div');
         emptyMsg.className = 'empty-state';
         const p = document.createElement('p');
-        p.textContent = "No activities found matching your filter. Try toggling 'Outdoor Only'.";
+        p.textContent = "Click the button above to generate a plan!";
         emptyMsg.appendChild(p);
         itineraryContainer.appendChild(emptyMsg);
         return;
     }
 
-    const times = ["Saturday Morning", "Saturday Afternoon", "Sunday Morning", "Sunday Afternoon"];
+    // Filter activities for the active day
+    const activitiesToShow = activeDay === 'saturday' 
+        ? currentWeekend.slice(0, 2) 
+        : currentWeekend.slice(2, 4);
 
-    selectedActivities.forEach((activity, index) => {
+    if (activitiesToShow.length === 0) {
+        const emptyMsg = document.createElement('div');
+        emptyMsg.className = 'empty-state';
+        const p = document.createElement('p');
+        p.textContent = "No activities generated for this day. Try generating again.";
+        emptyMsg.appendChild(p);
+        itineraryContainer.appendChild(emptyMsg);
+        return;
+    }
+
+    const times = ["Morning", "Afternoon"];
+
+    activitiesToShow.forEach((activity, index) => {
         const card = document.createElement('div');
         card.className = 'card';
 
